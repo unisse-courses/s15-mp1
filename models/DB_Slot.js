@@ -17,7 +17,7 @@ const slotModel = mongoose.model('slots', SlotSchema);
 
 // Get all slots that fit the query
 exports.getAll = (query, next) => {
-  slotModel.find(query).exec((err, slots) => {
+  slotModel.find(query).sort({slotOrder: 1}).exec((err, slots) => {
     if (err) throw err;
     const slotObjects = [];
     slots.forEach((doc) => {

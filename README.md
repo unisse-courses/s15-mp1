@@ -27,6 +27,7 @@ Limitations:
 - local build only
 - MVC not fully implemented
 - Application date set to May 8, 2020 for consistency with artificial data
+- limited UI responsiveness
 
 ---
 
