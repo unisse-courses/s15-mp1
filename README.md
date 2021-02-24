@@ -26,6 +26,7 @@ Limitations:
 - business logic not fully implemented i.e. checkout and add screening do not update database yet
 - local build only
 - MVC not fully implemented
+- Application date set to May 8, 2020 for consistency with artificial data
 
 ---
 
