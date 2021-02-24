@@ -26,7 +26,7 @@ Limitations:
 - business logic not fully implemented i.e. checkout and add screening do not update database yet
 - local build only
 - MVC not fully implemented
-- Application date set to May 8, 2020 for consistency with artificial data
+- Application date set to May 9, 2020 for consistency with artificial data
 - limited UI responsiveness
 
 ---
@@ -44,7 +44,7 @@ npm start
 ### Step 3: Access local instance on localhost:3000
 ### Step 4.a: Log in to customer services using
 ```
-username: customer@test.com
+email: customer@test.com
 password: p@ssword
 ```
 
@@ -54,7 +54,7 @@ For sample screening slot that is sold out, enter Screen 1 "The Room" Slot 2
 
 ### Step 4.b: Log in to employee services using
 ```
-username: employee@test.com
+email: employee@test.com
 password: p@ssword
 ```
 

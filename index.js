@@ -460,7 +460,7 @@ app.post('/cancelSeats',function(req,res) {
 
 app.get('/transactions', async (req,res) => {
   let user
-  const today = new Date(2020, 5, 8);
+  const today = new Date(2020, 4, 9);
   const sort = {date: 1}
   if (req.session.fullname != null)
     user = req.session.user
