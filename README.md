@@ -76,3 +76,6 @@ For sample screening slot that is sold out, enter Screen 1 "The Room" Slot 2
 username: employee@test.com
 password: p@ssword
 ```
+
+### Notes on local build
+Due to async changes to functions for Heroku compatibility, some functions fail when run locally. We recommend using the app hosted on Heroku.
