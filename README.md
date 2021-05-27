@@ -36,7 +36,11 @@ Notes:
 
 ---
 
-## Set-Up
+## Local Set-Up
+
+### Notes on local build
+Due to async changes to functions for Heroku compatibility, some functions fail when run locally. We recommend using the app hosted on Heroku.
+
 ### Prerequisite: Node.js and npm installed
 
 ### Step 0: Enable environment variables
@@ -61,6 +65,11 @@ npm install
 npm start
 ```
 ### Step 3: Access local instance on localhost:3000
+
+---
+
+## Usage
+
 ### Step 4.a: Log in to customer services using
 ```
 username: customer@test.com
@@ -77,5 +86,4 @@ username: employee@test.com
 password: p@ssword
 ```
 
-### Notes on local build
-Due to async changes to functions for Heroku compatibility, some functions fail when run locally. We recommend using the app hosted on Heroku.
+
