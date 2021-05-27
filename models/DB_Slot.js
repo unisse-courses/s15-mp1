@@ -17,14 +17,7 @@ const slotModel = mongoose.model('slots', SlotSchema);
 
 // Get all slots that fit the query
 exports.getAll = (query, next) => {
-  slotModel.find(query).sort({slotOrder: 1}).exec((err, slots) => {
-    if (err) throw err;
-    const slotObjects = [];
-    slots.forEach((doc) => {
-      slotObjects.push(doc.toObject());
-    });
-    next(err, slotObjects);
-  });
+  return slotModel.find(query).exec();
 };
 
 // get one slot matching query parameter
@@ -37,3 +30,7 @@ exports.getMovie = (query, next) => {
       next(err, slot);
   });
 };
+
+exports.addManyAsync = (data) => {
+  return slotModel.insertMany(data)
+}
