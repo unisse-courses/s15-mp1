@@ -33,3 +33,46 @@ Limitations:
 
 Notes:
 - date set static to May 8, 2020 for demo
+
+---
+
+## Set-Up
+### Prerequisite: Node.js and npm installed
+
+### Step 0: Enable environment variables
+Uncomment line 2 of ./index.js
+```
+require('dotenv').config();
+```
+
+Create .env file
+```
+PORT=3000
+MONGODB_URL="mongodb://OafallasKenneth:a1b2c3d4@ccapdev-mp-bigbrainmovi-shard-00-00.mubsx.gcp.mongodb.net:27017,ccapdev-mp-bigbrainmovi-shard-00-01.mubsx.gcp.mongodb.net:27017,ccapdev-mp-bigbrainmovi-shard-00-02.mubsx.gcp.mongodb.net:27017/BigBrainDB?ssl=true&replicaSet=CCAPDEV-MP-BIGBRAINMOVIES-shard-0&authSource=admin&retryWrites=true&w=majority"
+SESSION_SECRET="thisisthesecretsessionkey"
+```
+
+### Step 1: Install dependencies
+```
+npm install
+```
+### Step 2: Compiles and starts local instance
+```
+npm start
+```
+### Step 3: Access local instance on localhost:3000
+### Step 4.a: Log in to customer services using
+```
+username: customer@test.com
+password: p@ssword
+```
+
+For sample screening slot with a few unavailable seats, enter Screen 1 "The Room" Slot 1
+
+For sample screening slot that is sold out, enter Screen 1 "The Room" Slot 2
+
+### Step 4.b: Log in to employee services using
+```
+username: employee@test.com
+password: p@ssword
+```
